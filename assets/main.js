@@ -1,17 +1,9 @@
-const nav = document.querySelector('.data-nav');
-const navToggles = document.querySelectorAll('.data-nav-toggle');
+window.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.nav-open-btn').addEventListener('click', () => {
+      document.querySelector('.navbar').classList.add('navbar-active');
+  });
 
-
-
-toggleBtn .onClick = function () {
-
-}
-
-
-// wishlist button toggle
-const whishlistBtns = document.querySelectorAll('.data-whish-btn');
-for(let i = 0; i<whishlistBtns.length; i++) {
-  whishlistBtns(i).addEventListener('.click', function() {
-    toggleElem(this);
-  })
-}
+  document.querySelector('.nav-close-btn').addEventListener('click', () => {
+      document.querySelector('.navbar').classList.remove('navbar-active');
+  });
+});
